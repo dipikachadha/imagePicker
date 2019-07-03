@@ -18,9 +18,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qA-6k-hUr">
+                                <rect key="frame" x="163" y="438" width="88" height="30"/>
+                                <state key="normal" title="Activity View"/>
+                                <connections>
+                                    <action selector="experimentActivity:" destination="BYZ-38-t0r" eventType="touchUpInside" id="96V-SH-xGv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZR-kF-h3H">
+                                <rect key="frame" x="172" y="605" width="70" height="30"/>
+                                <state key="normal" title="Alert View"/>
+                                <connections>
+                                    <action selector="experimentAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yw0-nt-OaE"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvg-Ha-EAa">
-                                <rect key="frame" x="184" y="433" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="162.5" y="240" width="89" height="30"/>
+                                <state key="normal" title="Image Picker"/>
                                 <connections>
                                     <action selector="experiment" destination="BYZ-38-t0r" eventType="touchUpInside" id="BOh-nJ-ZFk"/>
                                 </connections>
@@ -28,14 +42,20 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="4qA-6k-hUr" firstAttribute="top" secondItem="fvg-Ha-EAa" secondAttribute="bottom" constant="168" id="B6J-SY-bzS"/>
+                            <constraint firstItem="OZR-kF-h3H" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="F7X-58-LnG"/>
                             <constraint firstItem="fvg-Ha-EAa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KZH-t6-Hme"/>
-                            <constraint firstItem="fvg-Ha-EAa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ety-sV-7cn"/>
+                            <constraint firstItem="OZR-kF-h3H" firstAttribute="top" secondItem="4qA-6k-hUr" secondAttribute="bottom" constant="137" id="Xnv-wA-qGZ"/>
+                            <constraint firstItem="4qA-6k-hUr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ge3-xR-wQy"/>
+                            <constraint firstItem="fvg-Ha-EAa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="k21-Dc-IUY"/>
+                            <constraint firstItem="4qA-6k-hUr" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="vSz-y2-URi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
         </scene>
     </scenes>
 </document>
